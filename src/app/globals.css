@@ -133,7 +133,7 @@
   }
 }
 
-.custom-shape-divider-bottom-1752514496 {
+.white-shape-divider {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -142,13 +142,13 @@
   line-height: 0;
 }
 
-.custom-shape-divider-bottom-1752514496 svg {
+.white-shape-divider svg {
   position: relative;
   display: block;
   width: calc(280% + 1.3px);
   height: 202px;
 }
 
-.custom-shape-divider-bottom-1752514496 .shape-fill {
+.white-shape-divider .shape-fill {
   fill: #FFFFFF;
 }

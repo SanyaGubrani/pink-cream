@@ -5,7 +5,6 @@ export type HomeHero = {
   heading: string;
   subheading: string;
   actions: { text?: string; url: string }[];
-  icon?: ReactNode;
 };
 
 export type HomeWelcome = {
