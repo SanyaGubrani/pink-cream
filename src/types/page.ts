@@ -1,77 +1,77 @@
-export type HomeHero = {
+export type Hero = {
   image: string;
   heading: string;
   subheading: string;
   actions: { text?: string; url: string }[];
 };
 
-export type HomeWelcome = {
+export type Overview = {
   image: string;
   title: string;
   subtitle: string;
   stats: { number: string; text: string }[];
 };
 
-export type HomeFeatureItem = {
+export type FeatureItem = {
   icon: string;
   title: string;
   content: string;
   learnMoreLink: string;
 };
 
-export type HomeFeatures = {
+export type Features = {
   title: string;
-  items: HomeFeatureItem[];
+  items: FeatureItem[];
 };
 
-export type HomeExpertiseLoader = {
+export type ExpertiseLoader = {
   label: string;
   percentage: number;
 };
 
-export type HomeExpertise = {
+export type Expertise = {
   image: string;
   title: string;
   content: string;
-  loaders: HomeExpertiseLoader[];
+  loaders: ExpertiseLoader[];
   button: { text: string; url: string };
 };
 
-export type HomePricingPlan = {
+export type PricingPlan = {
   name: string;
   price: string;
   features: string[];
   button: { text: string; url: string };
 };
 
-export type HomePricing = {
+export type Pricing = {
   title: string;
-  plans: HomePricingPlan[];
+  plans: PricingPlan[];
 };
 
-export type HomeTestimonial = {
+export type Testimonial = {
   quote: string;
   author: string;
   role: string;
   avatar: string;
 };
 
-export type HomeTestimonials = {
+export type Testimonials = {
   title: string;
-  items: HomeTestimonial[];
+  items: Testimonial[];
 };
 
-export type HomeGalleryImage = {
+export type GalleryImage = {
   src: string;
   alt: string;
 };
 
-export type HomeGallery = {
+export type Gallery = {
   title: string;
-  images: HomeGalleryImage[];
+  images: GalleryImage[];
 };
 
-export type HomeBlogPost = {
+export type BlogPost = {
   image: string;
   date: string;
   title: string;
@@ -79,25 +79,25 @@ export type HomeBlogPost = {
   button: { text: string; url: string };
 };
 
-export type HomeBlogs = {
+export type Blogs = {
   title: string;
-  posts: HomeBlogPost[];
+  posts: BlogPost[];
 };
 
-export type HomeCTA = {
+export type CTA = {
   title: string;
   subtitle: string;
   button: { text: string; url: string };
 };
 
-export type HomeConfig = {
-  hero: HomeHero;
-  welcome: HomeWelcome;
-  features: HomeFeatures;
-  expertise: HomeExpertise;
-  pricing: HomePricing;
-  testimonials: HomeTestimonials;
-  gallery: HomeGallery;
-  blogs: HomeBlogs;
-  cta: HomeCTA;
+export type Config = {
+  hero: Hero;
+  welcome: Overview;
+  features: Features;
+  expertise: Expertise;
+  pricing: Pricing;
+  testimonials: Testimonials;
+  gallery: Gallery;
+  blogs: Blogs;
+  cta: CTA;
 };

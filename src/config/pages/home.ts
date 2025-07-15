@@ -9,13 +9,13 @@ export const homeConfig = {
         text: "Get Started",
         url: "/contact",
       },
-    //   {
-    //     text: 'Learn more',
-    //     url: "/about",
-    //   },
+      //   {
+      //     text: 'Learn more',
+      //     url: "/about",
+      //   },
     ],
   },
-  welcome: {
+  overview: {
     image: "https://placehold.co/600x400/d1d5db/374151?text=Welcome",
     title: "Welcome to Our Creative Studio",
     subtitle: "We are a team of passionate designers and developers dedicated to creating amazing digital experiences.",
