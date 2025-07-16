@@ -14,9 +14,11 @@ export type Overview = {
 
 export type FeatureItem = {
   icon: string;
+  iconDark?: string;
   title: string;
   content: string;
   learnMoreLink: string;
+  isHighlighted?: boolean;
 };
 
 export type Features = {
@@ -39,9 +41,12 @@ export type Expertise = {
 
 export type PricingPlan = {
   name: string;
+  content: string;
   price: string;
+  period: string;
   features: string[];
   button: { text: string; url: string };
+  isHighlighted?: boolean;
 };
 
 export type Pricing = {

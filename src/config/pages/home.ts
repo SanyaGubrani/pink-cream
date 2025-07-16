@@ -16,9 +16,10 @@ export const homeConfig = {
     ],
   },
   overview: {
-    image: "https://placehold.co/600x400/d1d5db/374151?text=Welcome",
-    title: "Welcome to Our Creative Studio",
-    subtitle: "We are a team of passionate designers and developers dedicated to creating amazing digital experiences.",
+    image: "/assets/images/overview.svg",
+    title: "Welcome to Our PinkCream Studio",
+    subtitle:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, ullamco laboris ex ea commodo consequat. Duis aute irure dolor in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     stats: [
       {
         number: "12+",
@@ -38,27 +39,31 @@ export const homeConfig = {
     title: "Why Choose Us?",
     items: [
       {
-        icon: "https://placehold.co/80x80/e0e7ff/4338ca?text=Icon1",
+        icon: "/bulb.svg",
+        iconDark: "/bulb-light.svg",
         title: "Creative Design",
-        content: "Our designs are modern, clean, and tailored to your brand's identity.",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         learnMoreLink: "/features/creative-design",
       },
       {
-        icon: "https://placehold.co/80x80/e0e7ff/4338ca?text=Icon2",
-        title: "Cutting-Edge Technology",
-        content: "We use the latest technologies to build fast, secure, and scalable solutions.",
+        icon: "/diamond-cream.svg",
+        title: "Technology",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         learnMoreLink: "/features/technology",
+        isHighlighted: true,
       },
       {
-        icon: "https://placehold.co/80x80/e0e7ff/4338ca?text=Icon3",
+        icon: "/support-dark.svg",
+        iconDark: "/support-light.svg",
         title: "Dedicated Support",
-        content: "Our team is always here to help you with any questions or issues.",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         learnMoreLink: "/features/support",
       },
       {
-        icon: "https://placehold.co/80x80/e0e7ff/4338ca?text=Icon4",
+        icon: "/growth.svg",
+        iconDark: "/growth-dark.svg",
         title: "Proven Results",
-        content: "We have a track record of delivering projects that exceed expectations.",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         learnMoreLink: "/features/results",
       },
     ],
@@ -67,19 +72,19 @@ export const homeConfig = {
     image: "https://placehold.co/600x450/dbeafe/1e40af?text=Expertise",
     title: "Our Expertise",
     content:
-      "We specialize in a wide range of services, from web development to digital marketing. Our team has the skills and experience to handle any challenge.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et nisi volutpat, dapibus neque nec, aliquet lacus. Ut scelerisque dapibus placerat ac ipsum. Duis nec viverra nibh. Etiam lacus urna, accumsan a elit vitae, porttitor rhoncus purus.",
     loaders: [
       {
         label: "Web Development",
-        percentage: 95,
+        percentage: 85,
       },
       {
         label: "UI/UX Design",
-        percentage: 90,
+        percentage: 95,
       },
       {
         label: "Digital Marketing",
-        percentage: 85,
+        percentage: 90,
       },
     ],
     button: {
@@ -92,26 +97,45 @@ export const homeConfig = {
     plans: [
       {
         name: "Basic",
-        price: "$49/mo",
-        features: ["5 Pages", "Basic SEO", "1GB Storage", "Email Support"],
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit at tempor varius. ",
+        price: "50",
+        period: "month",
+        features: [
+          "Aliquam imperdiet lorem ut lorem",
+          "Imperdiet lorem ut lorem",
+          "Aliquam imperdiet lorem lorem",
+        ],
         button: {
           text: "Choose Plan",
           url: "/pricing/basic",
         },
       },
       {
-        name: "Pro",
-        price: "$99/mo",
-        features: ["10 Pages", "Advanced SEO", "10GB Storage", "Priority Support"],
+        name: "Premium",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit at tempor varius. ",
+        price: "82",
+        period: "month",
+        features: [
+          "Aliquam imperdiet lorem ut lorem",
+          "Imperdiet lorem ut lorem",
+          "Aliquam imperdiet lorem lorem",
+        ],
         button: {
           text: "Choose Plan",
           url: "/pricing/pro",
         },
+        isHighlighted: true,
       },
       {
-        name: "Enterprise",
-        price: "Contact Us",
-        features: ["Unlimited Pages", "Full SEO Suite", "Unlimited Storage", "24/7 Support"],
+        name: "Standard",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit at tempor varius. ",
+        price: "68",
+        period: "month",
+        features: [
+          "Aliquam imperdiet lorem ut lorem",
+          "Imperdiet lorem ut lorem",
+          "Aliquam imperdiet lorem lorem",
+        ],
         button: {
           text: "Contact Us",
           url: "/contact",

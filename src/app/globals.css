@@ -60,7 +60,7 @@
   --card-foreground: oklch(0.267 0.028 45.8);
   --popover: oklch(0.9653 0.0184 86.15);
   --popover-foreground: oklch(0.267 0.028 45.8);
-  --primary: oklch(0.267 0.028 45.8);
+  --primary: oklch(0.2759 0.0911 8.21);
   --primary-foreground: oklch(0.9653 0.0184 86.15);
   --secondary: oklch(0.835 0.045 58.3);
   --secondary-foreground: oklch(0.267 0.028 45.8);
@@ -133,7 +133,7 @@
   }
 }
 
-.white-shape-divider {
+.shape-divider {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -142,13 +142,9 @@
   line-height: 0;
 }
 
-.white-shape-divider svg {
+.shape-divider svg {
   position: relative;
   display: block;
   width: calc(280% + 1.3px);
   height: 202px;
-}
-
-.white-shape-divider .shape-fill {
-  fill: #FFFFFF;
 }
