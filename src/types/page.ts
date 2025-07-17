@@ -9,7 +9,7 @@ export type Overview = {
   image: string;
   title: string;
   subtitle: string;
-  stats: { number: string; text: string }[];
+  stats: { number: string; text: string; isHighlighted?: boolean }[];
 };
 
 export type FeatureItem = {

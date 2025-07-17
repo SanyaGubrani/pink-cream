@@ -50,23 +50,23 @@ export default function OverviewSection({ data }: OverviewProps) {
                 className={cn(
                   "shadow-muted-foreground/50 rounded-tl-[1.5rem] rounded-tr-[3.5rem] rounded-br-2xl p-4 text-center shadow-md duration-300 hover:shadow-md",
                   {
-                    "bg-accent text-background": index === 0,
-                    "bg-background": index !== 0,
+                    "bg-accent text-background": stat.isHighlighted,
+                    "bg-background": !stat.isHighlighted,
                   }
                 )}
               >
                 <p
                   className={cn("font-cormorant text-4xl font-extrabold", {
-                    "text-background": index === 0,
-                    "text-primary": index !== 0,
+                    "text-background": stat.isHighlighted,
+                    "text-primary": !stat.isHighlighted,
                   })}
                 >
                   {stat.number}
                 </p>
                 <p
                   className={cn("font-bitter mt-2 text-xs font-medium break-words lg:text-sm", {
-                    "text-background/80": index === 0,
-                    "text-muted-foreground": index !== 0,
+                    "text-background/80": stat.isHighlighted,
+                    "text-muted-foreground": !stat.isHighlighted,
                   })}
                 >
                   {stat.text}

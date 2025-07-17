@@ -24,6 +24,7 @@ export const homeConfig = {
       {
         number: "12+",
         text: "Years of Experience",
+        isHighlighted: true,
       },
       {
         number: "500+",
