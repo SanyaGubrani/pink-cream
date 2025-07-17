@@ -48,7 +48,7 @@ const FeatureCard = ({ item }: { item: FeatureItem }) => {
       </Link>
       {item.isHighlighted && (
         <Image
-          src="/scribbles.png"
+          src="/scribbles.svg"
           alt="Decorative Scribble"
           width={60}
           height={60}

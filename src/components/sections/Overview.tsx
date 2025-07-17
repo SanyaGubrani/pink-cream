@@ -11,7 +11,7 @@ interface OverviewProps {
 
 export default function OverviewSection({ data }: OverviewProps) {
   return (
-    <section className="dark:bg-muted relative w-full bg-white pb-36">
+    <section className="dark:bg-muted relative w-full bg-white pt-4 pb-52">
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-y-12 px-4 sm:px-6 md:grid-cols-2 md:gap-x-12 lg:gap-x-20 lg:px-8">
         {/* Image Column */}
         <div className="relative flex w-full items-center justify-center">

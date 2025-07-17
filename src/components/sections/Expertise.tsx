@@ -14,7 +14,7 @@ export default function ExpertiseSection({ data }: ExpertiseProps) {
   const loaderColors = ["bg-muted", "bg-accent", "bg-primary"];
 
   return (
-    <section className="bg-background relative w-full overflow-hidden pt-2 pb-36">
+    <section className="bg-background relative w-full overflow-hidden pt-2 pb-52">
       <div className="mx-auto flex max-w-7xl flex-col-reverse px-4 sm:px-6 md:flex-row md:items-center md:justify-between md:gap-10 lg:px-8">
         <div className="mt-12 flex w-full flex-col items-center text-center md:mt-0 md:items-start md:text-left">
           {/* Title */}

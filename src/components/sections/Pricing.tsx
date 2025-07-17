@@ -1,5 +1,6 @@
+"use client";
 import Link from "next/link";
-import { FaCheck } from "react-icons/fa";
+import Image from "next/image";
 import { Pricing, PricingPlan } from "@/types/page";
 
 interface PricingProps {
@@ -16,7 +17,7 @@ const PricingCard = ({ plan }: { plan: PricingPlan }) => {
     : `${baseClasses} bg-white dark:bg-primary/20 shadow-md shadow-muted-foreground/40`;
 
   const buttonClasses = plan.isHighlighted
-    ? "bg-white text-primary dark:text-muted/80 hover:bg-gray-200"
+    ? "bg-white text-primary dark:text-muted/80 hover:bg-muted dark:hover:bg-muted/40 hover:text-white dark:hover:text-white"
     : "bg-accent dark:bg-accent/80 text-white hover:bg-accent/80";
 
   return (
@@ -55,12 +56,25 @@ export default function PricingSection({ data }: PricingProps) {
   const plansWithHighlight = data.plans.map((plan, idx) => (idx === 1 ? { ...plan, isHighlighted: true } : plan));
 
   return (
-    <section className="dark:bg-muted relative w-full overflow-hidden bg-white pt-1 pb-40">
+    <section className="dark:bg-muted relative w-full overflow-hidden bg-white pt-8 pb-52">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h1 className="font-cormorant text-primary dark:text-primary mb-16 text-4xl font-semibold sm:text-5xl lg:text-6xl">
-            {data.title}
-          </h1>
+          <div className="relative mx-auto flex w-full items-center justify-center">
+            <Image
+              src="/scribbles.svg"
+              alt="Decorative Scribble"
+              width={60}
+              height={60}
+              className="absolute -top-8 -right-1 z-10 sm:right-24 sm:size-16"
+              onError={(e) => {
+                e.currentTarget.style.display = "none";
+              }}
+            />
+            <h1 className="font-cormorant text-primary dark:text-primary mb-16 text-4xl font-semibold sm:text-5xl lg:text-6xl">
+              {data.title}
+            </h1>
+          </div>
+
           <div className="mx-auto grid items-center gap-10 lg:grid-cols-3 lg:gap-8">
             {plansWithHighlight.map((plan, idx) => (
               <PricingCard key={idx} plan={plan} />
@@ -73,7 +87,7 @@ export default function PricingSection({ data }: PricingProps) {
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
           <path
             d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-            className="dark:fill-muted fill-background"
+            className="fill-muted dark:fill-primary/40"
           ></path>
         </svg>
       </div>

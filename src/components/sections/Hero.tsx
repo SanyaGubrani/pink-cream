@@ -10,7 +10,7 @@ interface HeroProps {
 
 export default function HeroSection({ data }: HeroProps) {
   return (
-    <section className="bg-background relative w-full overflow-hidden pb-32 md:pt-12 xl:pt-6">
+    <section className="bg-background relative w-full overflow-hidden pb-52 pt-4 md:pt-12 xl:pt-6">
       <div className="mx-auto flex max-w-7xl flex-col-reverse px-4 sm:px-6 md:flex-row md:items-center md:justify-between md:gap-10 lg:px-8">
         <div className="flex w-full flex-col items-center text-center md:items-start md:text-left">
           {/* Hero Content */}
@@ -20,7 +20,7 @@ export default function HeroSection({ data }: HeroProps) {
             </h1>
             {/* scribbles */}
             <Image
-              src="/scribbles.png"
+              src="/scribbles.svg"
               alt="Decorative Scribble"
               width={60}
               height={60}
