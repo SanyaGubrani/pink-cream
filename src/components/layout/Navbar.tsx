@@ -66,7 +66,7 @@ export default function Navbar() {
                       {item.trigger}
                     </NavigationMenuTrigger>
                     <NavigationMenuContent>
-                      <ul className="bg-accent/10 flex w-[440px] flex-col gap-2 rounded-md p-2 text-xs">
+                      <ul className="bg-white/90 dark:bg-muted-foreground/30 flex w-[440px] flex-col gap-2 rounded-md p-2 text-xs">
                         {item.content?.items.map((subItem) => (
                           <ListItem key={subItem.title} title={subItem.title} href={subItem.href} icon={subItem.icon}>
                             {subItem.description}
@@ -181,7 +181,7 @@ const ListItem = ({
           )}
         >
           {Icon && (
-            <div className="bg-muted/60 border-muted flex-shrink-0 rounded-lg border-2 px-3 py-2.5">
+            <div className="bg-muted/60 dark:bg-muted dark:border-muted-foreground/40 border-muted flex-shrink-0 rounded-lg border-2 px-3 py-2.5">
               <Icon className="text-muted-foreground size-6" />
             </div>
           )}
