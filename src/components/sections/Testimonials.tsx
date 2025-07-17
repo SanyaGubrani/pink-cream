@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { FaStar, FaQuoteRight } from "react-icons/fa";
+import { FaStar } from "react-icons/fa";
 import { Testimonials, Testimonial } from "@/types/page";
 
 interface TestimonialsProps {

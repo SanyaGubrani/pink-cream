@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Expertise, ExpertiseLoader } from "@/types/page";
+import { Expertise } from "@/types/page";
 import expertiseImg from "@/assets/images/expertise.svg";
 
 interface ExpertiseProps {
