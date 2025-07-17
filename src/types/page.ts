@@ -1,3 +1,5 @@
+import { StaticImageData } from "next/image";
+
 export type Hero = {
   image: string;
   heading: string;
@@ -58,7 +60,7 @@ export type Testimonial = {
   quote: string;
   author: string;
   role: string;
-  avatar: string;
+  avatar: string | StaticImageData;
 };
 
 export type Testimonials = {
@@ -67,7 +69,7 @@ export type Testimonials = {
 };
 
 export type GalleryImage = {
-  src: string;
+  src: string | StaticImageData;
   alt: string;
 };
 

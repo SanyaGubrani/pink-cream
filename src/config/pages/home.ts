@@ -1,3 +1,14 @@
+import avatarOne from "@/assets/images/avatar-one.jpg";
+import avatarTwo from "@/assets/images/avatar-two.jpg";
+import avatarThree from "@/assets/images/avatar-three.jpg";
+import imgOne from "@/assets/images/img1.jpg";
+import imgTwo from "@/assets/images/img2.jpg";
+import imgThree from "@/assets/images/img3.jpg";
+import imgFour from "@/assets/images/img4.jpg";
+import imgFive from "@/assets/images/img5.jpg";
+import imgSix from "@/assets/images/img6.jpg";
+import imgSeven from "@/assets/images/img7.jpg";
+
 export const homeConfig = {
   hero: {
     image: "/assets/images/hero.svg",
@@ -101,11 +112,7 @@ export const homeConfig = {
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit at tempor varius. ",
         price: "50",
         period: "month",
-        features: [
-          "Aliquam imperdiet lorem ut lorem",
-          "Imperdiet lorem ut lorem",
-          "Aliquam imperdiet lorem lorem",
-        ],
+        features: ["Aliquam imperdiet lorem ut lorem", "Imperdiet lorem ut lorem", "Aliquam imperdiet lorem lorem"],
         button: {
           text: "Choose Plan",
           url: "/pricing/basic",
@@ -116,11 +123,7 @@ export const homeConfig = {
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit at tempor varius. ",
         price: "82",
         period: "month",
-        features: [
-          "Aliquam imperdiet lorem ut lorem",
-          "Imperdiet lorem ut lorem",
-          "Aliquam imperdiet lorem lorem",
-        ],
+        features: ["Aliquam imperdiet lorem ut lorem", "Imperdiet lorem ut lorem", "Aliquam imperdiet lorem lorem"],
         button: {
           text: "Choose Plan",
           url: "/pricing/pro",
@@ -132,11 +135,7 @@ export const homeConfig = {
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit at tempor varius. ",
         price: "68",
         period: "month",
-        features: [
-          "Aliquam imperdiet lorem ut lorem",
-          "Imperdiet lorem ut lorem",
-          "Aliquam imperdiet lorem lorem",
-        ],
+        features: ["Aliquam imperdiet lorem ut lorem", "Imperdiet lorem ut lorem", "Aliquam imperdiet lorem lorem"],
         button: {
           text: "Contact Us",
           url: "/contact",
@@ -148,26 +147,38 @@ export const homeConfig = {
     title: "What Our Clients Say",
     items: [
       {
-        quote: "This is the best service I have ever used. The team is amazing and the results are outstanding!",
-        author: "Jane Doe",
-        role: "CEO, Company Inc.",
-        avatar: "https://placehold.co/100x100/f3e8ff/8b5cf6?text=JD",
+        quote:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.",
+        author: "Jane",
+        role: "CEO",
+        avatar: avatarOne,
       },
       {
-        quote: "I was blown away by the quality of work and the professionalism of the team. Highly recommended!",
-        author: "John Smith",
-        role: "Marketing Director, Another Co.",
-        avatar: "https://placehold.co/100x100/ecfccb/4d7c0f?text=JS",
+        quote:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.",
+        author: "Diana",
+        role: "Director",
+        avatar: avatarTwo,
+      },
+      {
+        quote:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.",
+        author: "Maxicas",
+        role: "Manager",
+        avatar: avatarThree,
       },
     ],
   },
   gallery: {
     title: "Our Gallery",
     images: [
-      { src: "https://placehold.co/400x300/fee2e2/991b1b?text=Gallery+1", alt: "Gallery Image 1" },
-      { src: "https://placehold.co/400x300/dcfce7/166534?text=Gallery+2", alt: "Gallery Image 2" },
-      { src: "https://placehold.co/400x300/fef9c3/854d0e?text=Gallery+3", alt: "Gallery Image 3" },
-      { src: "https://placehold.co/400x300/f5d0fe/86198f?text=Gallery+4", alt: "Gallery Image 4" },
+      { src: imgOne, alt: "Gallery Image 1" },
+      { src: imgTwo, alt: "Gallery Image 2" },
+      { src: imgThree, alt: "Gallery Image 3" },
+      { src: imgFour, alt: "Gallery Image 4" },
+      { src: imgFive, alt: "Gallery Image 5" },
+      { src: imgSix, alt: "Gallery Image 6" },
+      { src: imgSeven, alt: "Gallery Image 7" },
     ],
   },
   blogs: {
