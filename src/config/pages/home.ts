@@ -183,28 +183,7 @@ export const homeConfig = {
   },
   blogs: {
     title: "Blogs & Articles",
-    posts: [
-      {
-        image: "https://placehold.co/400x250/e0f2fe/0891b2?text=Blog+1",
-        date: "July 15, 2024",
-        title: "The Future of Web Design",
-        shortContent: "Discover the latest trends that are shaping the future of web design and user experience.",
-        button: {
-          text: "Read More",
-          url: "/blog/future-of-web-design",
-        },
-      },
-      {
-        image: "https://placehold.co/400x250/fae8ff/9333ea?text=Blog+2",
-        date: "July 10, 2024",
-        title: "How to Optimize Your Site for SEO",
-        shortContent: "A comprehensive guide to improving your website's ranking on search engines.",
-        button: {
-          text: "Read More",
-          url: "/blog/seo-optimization",
-        },
-      },
-    ],
+    seeMoreUrl: "/blog",
   },
   cta: {
     title: "Ready to Start Your Project?",

@@ -15,7 +15,7 @@ export default function GallerySection({ data }: GalleryProps) {
     <section className="bg-background relative w-full overflow-hidden pt-4 pb-52">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h1 className="font-cormorant text-primary mb-16 text-4xl font-semibold sm:text-5xl lg:text-6xl dark:text-white">
+          <h1 className="font-cormorant text-primary mb-16 text-4xl font-semibold sm:text-5xl lg:text-6xl">
             {data.title}
           </h1>
         </div>
@@ -33,6 +33,7 @@ export default function GallerySection({ data }: GalleryProps) {
               <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
                 <div className="aspect-w-4 aspect-h-3 w-full overflow-hidden rounded-2xl shadow-md">
                   <Image
+                    loading="lazy"
                     src={image.src}
                     alt={image.alt}
                     className="h-full w-full object-cover opacity-90 transition-transform duration-500 hover:scale-105"
