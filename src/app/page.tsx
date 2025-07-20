@@ -10,6 +10,7 @@ import BlogsSection from "@/components/sections/Blogs";
 import CTASection from "@/components/sections/CTA";
 import { getBlogPosts } from "@/lib/blog";
 
+
 export default async function Home() {
   const allPosts = await getBlogPosts();
   const recentPosts = allPosts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()).slice(0, 3);
@@ -24,7 +25,7 @@ export default async function Home() {
       <TestimonialsSection data={homeConfig.testimonials} />
       <GallerySection data={homeConfig.gallery} />
       <BlogsSection posts={recentPosts} data={homeConfig.blogs} />
-      <CTASection />
+      <CTASection data={homeConfig.cta} />
     </>
   );
 }

@@ -4,6 +4,8 @@ import { cn, constructMetadata } from "@/lib/utils";
 import { Geist, Bitter, Cormorant } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/layout/Navbar";
+import FooterSection from "@/components/layout/Footer";
+import { footerConfig } from "@/config/footer";
 
 export const metadata: Metadata = constructMetadata({});
 
@@ -33,7 +35,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          "min-h-screen antialiased w-full mx-auto scroll-smooth",
+          "mx-auto min-h-screen w-full scroll-smooth antialiased",
           geistSans.variable,
           bitter.variable,
           cormorant.variable
@@ -42,6 +44,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
           <Navbar />
           {children}
+          <FooterSection data={footerConfig} />
         </ThemeProvider>
       </body>
     </html>

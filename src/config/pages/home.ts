@@ -186,8 +186,9 @@ export const homeConfig = {
     seeMoreUrl: "/blog",
   },
   cta: {
-    title: "Ready to Start Your Project?",
-    subtitle: "Let's work together to create something amazing. Contact us today to get a free quote.",
+    title: "Our Newsletter",
+    subtitle:
+      "Let's work together to create something amazing. Contact us today to get a free quote.Lorem ipsum dolor sit amet, consectetur adipiscing elit ",
     button: {
       text: "Get a Free Quote",
       url: "/contact",
