@@ -8,7 +8,7 @@ export default async function BlogPage() {
   });
 
   return (
-    <section className="bg-background dark:bg- py-20">
+    <section className="bg-white dark:bg-muted dark:bg- py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h1 className="font-cormorant text-primary mb-16 text-4xl font-semibold sm:text-5xl lg:text-6xl">

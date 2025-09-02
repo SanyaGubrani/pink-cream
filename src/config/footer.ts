@@ -3,7 +3,7 @@ import { PiStarFourFill } from "react-icons/pi";
 
 export const footerConfig = {
     brand: {
-      name: 'Femine',
+      name: 'PinkCream',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper.',
       icon: PiStarFourFill,
     },

@@ -1,5 +1,3 @@
-// app/blog/[slug]/page.tsx
-
 import { getBlogPosts, getPost } from "@/lib/blog";
 import { notFound } from "next/navigation";
 import Image, { StaticImageData } from "next/image";
@@ -38,7 +36,7 @@ export async function generateStaticParams() {
 //  Author Card Component
 const AuthorCard = ({ authorName }: { authorName: string }) => {
   return (
-    <div className="mt-16 rounded-2xl bg-white p-6 shadow-lg dark:bg-gray-800">
+    <div className="mt-16 rounded-2xl bg-muted/80 p-6 shadow-lg dark:bg-primary/20">
       <div className="flex items-center gap-4">
         <Image src="/blog01.jpg" alt={authorName} width={60} height={60} className="rounded-full" />
         <div>
@@ -61,7 +59,7 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
   const metadata = post.metadata as PostMetadata;
 
   return (
-    <div className="bg-background">
+    <div className="bg-white dark:bg-muted">
       <article className="mx-auto max-w-4xl px-4 py-16 sm:px-6 lg:px-8">
         {/* Post Header */}
         <header className="mb-12 text-center">

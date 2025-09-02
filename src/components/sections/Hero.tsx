@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Hero } from "@/types/page";
+import { Hero } from "@/types/home";
 import HeroImg from "@/assets/images/Hero.svg";
 import { BiSolidRightArrow } from "react-icons/bi";
 
@@ -10,7 +10,7 @@ interface HeroProps {
 
 export default function HeroSection({ data }: HeroProps) {
   return (
-    <section className="bg-background relative w-full overflow-hidden pb-52 pt-4 md:pt-12 xl:pt-6">
+    <section className="bg-background relative w-full overflow-hidden pt-4 pb-52 md:pt-12 xl:pt-6">
       <div className="mx-auto flex max-w-7xl flex-col-reverse px-4 sm:px-6 md:flex-row md:items-center md:justify-between md:gap-10 lg:px-8">
         <div className="flex w-full flex-col items-center text-center md:items-start md:text-left">
           {/* Hero Content */}

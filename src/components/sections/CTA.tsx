@@ -1,17 +1,18 @@
 "use client";
 
 import Link from "next/link";
-import { CTA } from "@/types/page";
+import { CTA } from "@/types/home";
 
 interface CtaProps {
   data: CTA;
 }
 
+
 export default function CtaSection({ data }: CtaProps) {
   return (
-    <section className="relative w-full overflow-hidden bg-transparent z-10 -mb-52">
+    <section className="relative z-10 -mb-52 w-full overflow-hidden bg-transparent">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="dark:bg-[#856a5d] bg-[#f5dcce] relative flex flex-col items-center justify-between gap-8 overflow-hidden rounded-tl-[3rem] rounded-tr-[2rem] rounded-br-[3rem] rounded-bl-sm px-8 py-16 text-center shadow-lg md:flex-row md:px-16 md:py-18 md:text-left">
+        <div className="relative flex flex-col items-center justify-between gap-8 overflow-hidden rounded-tl-[3rem] rounded-tr-[2rem] rounded-br-[3rem] rounded-bl-sm bg-[#f5dcce] px-8 py-16 text-center shadow-lg md:flex-row md:px-16 md:py-18 md:text-left dark:bg-[#856a5d]">
           {/* Gradient Glow Effect */}
           <div
             aria-hidden="true"

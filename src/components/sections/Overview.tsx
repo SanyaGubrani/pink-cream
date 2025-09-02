@@ -1,6 +1,6 @@
 "use client";
 
-import { Overview } from "@/types/page";
+import { Overview } from "@/types/home";
 import overviewImg from "@/assets/images/overview.svg";
 import Image from "next/image";
 import { cn } from "@/lib/utils";

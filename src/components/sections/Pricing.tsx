@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import { Pricing, PricingPlan } from "@/types/page";
+import { Pricing, PricingPlan } from "@/types/home";
 
 interface PricingProps {
   data: Pricing;

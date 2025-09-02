@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { FaStar } from "react-icons/fa";
-import { Testimonials, Testimonial } from "@/types/page";
+import { Testimonials, Testimonial } from "@/types/home";
 
 interface TestimonialsProps {
   data: Testimonials;

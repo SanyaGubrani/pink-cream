@@ -6,6 +6,8 @@ import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/layout/Navbar";
 import FooterSection from "@/components/layout/Footer";
 import { footerConfig } from "@/config/footer";
+import CtaSection from "@/components/sections/CTA";
+import { homeConfig } from "@/config/pages/home";
 
 export const metadata: Metadata = constructMetadata({});
 
@@ -44,6 +46,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
           <Navbar />
           {children}
+          <CtaSection data={homeConfig.cta} />
           <FooterSection data={footerConfig} />
         </ThemeProvider>
       </body>

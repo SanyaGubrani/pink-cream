@@ -1,6 +1,6 @@
 "use client";
 
-import { Features, FeatureItem } from "@/types/page";
+import { Features, FeatureItem } from "@/types/home";
 import Image from "next/image";
 import Link from "next/link";
 import { FaArrowRightLong } from "react-icons/fa6";

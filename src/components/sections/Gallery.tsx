@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import { Gallery } from "@/types/page";
+import { Gallery } from "@/types/home";
 
 interface GalleryProps {
   data: Gallery;
