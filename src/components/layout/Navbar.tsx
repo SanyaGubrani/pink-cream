@@ -66,7 +66,7 @@ export default function Navbar() {
                       {item.trigger}
                     </NavigationMenuTrigger>
                     <NavigationMenuContent>
-                      <ul className="bg-white/90 dark:bg-muted-foreground/30 flex w-[440px] flex-col gap-2 rounded-md p-2 text-xs">
+                      <ul className="dark:bg-muted-foreground/30 flex w-[440px] flex-col gap-2 rounded-md bg-white/90 p-2 text-xs">
                         {item.content?.items.map((subItem) => (
                           <ListItem key={subItem.title} title={subItem.title} href={subItem.href} icon={subItem.icon}>
                             {subItem.description}
