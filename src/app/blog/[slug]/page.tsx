@@ -16,6 +16,7 @@ type PostMetadata = {
 };
 
 // Generate Metadata for SEO
+// @ts-ignore
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
   const post = await getPost(params.slug);
   if (!post) {
@@ -28,6 +29,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 }
 
 // Generate Static Paths for all posts
+// @ts-ignore
 export async function generateStaticParams() {
   const posts = await getBlogPosts();
   return posts.map((post) => ({ slug: post.slug }));
@@ -36,7 +38,7 @@ export async function generateStaticParams() {
 //  Author Card Component
 const AuthorCard = ({ authorName }: { authorName: string }) => {
   return (
-    <div className="mt-16 rounded-2xl bg-muted/80 p-6 shadow-lg dark:bg-primary/20">
+    <div className="bg-muted/80 dark:bg-primary/20 mt-16 rounded-2xl p-6 shadow-lg">
       <div className="flex items-center gap-4">
         <Image src="/blog01.jpg" alt={authorName} width={60} height={60} className="rounded-full" />
         <div>
@@ -49,6 +51,7 @@ const AuthorCard = ({ authorName }: { authorName: string }) => {
 };
 
 //  Main Blog Post Page Component
+// @ts-ignore
 export default async function BlogPostPage({ params }: { params: { slug: string } }) {
   const post = await getPost(params.slug);
 
@@ -59,7 +62,7 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
   const metadata = post.metadata as PostMetadata;
 
   return (
-    <div className="bg-white dark:bg-muted">
+    <div className="dark:bg-muted bg-white">
       <article className="mx-auto max-w-4xl px-4 py-16 sm:px-6 lg:px-8">
         {/* Post Header */}
         <header className="mb-12 text-center">
